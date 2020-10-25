@@ -1,8 +1,10 @@
+// Recipe component含有Edit, Delete btn; recipe template和 ingredient component
 import React, { useContext } from 'react'
 import IngredientList from './IngredientList';
 import { RecipeContext } from './App'
 
 export default function Recipe(props) {
+  // Function: Delete, Edit; 調用useContext 傳進來 handleRecipeDelete, handleRecipeSelect
   const { handleRecipeDelete, handleRecipeSelect } = useContext(RecipeContext)
   const {
     id,

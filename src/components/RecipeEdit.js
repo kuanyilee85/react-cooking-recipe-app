@@ -4,6 +4,7 @@ import { RecipeContext } from './App'
 import {v4 as uuidv4} from 'uuid';
 
 export default function RecipeEdit({recipe}) {
+  // 修改recipe, useContext傳進來 handleRecipeChange, handleRecipeSelect
     const {handleRecipeChange, handleRecipeSelect} =useContext(RecipeContext)
 
     function handleChange(changes) {
